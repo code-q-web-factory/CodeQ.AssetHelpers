@@ -1,0 +1,5 @@
+Neos:
+  Fusion:
+    defaultContext:
+      'CodeQ.Asset': CodeQ\AssetHelpers\Eel\Helper\AssetHelper
+      'CodeQ.AssetCacheTag': CodeQ\AssetHelpers\Eel\Helper\AssetCacheTagHelper

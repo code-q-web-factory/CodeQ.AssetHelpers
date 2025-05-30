@@ -1,0 +1,9 @@
+CodeQ\AssetHelpers\Cache\ContentCacheFlusher:
+  properties:
+    contentCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Neos_Fusion_Content

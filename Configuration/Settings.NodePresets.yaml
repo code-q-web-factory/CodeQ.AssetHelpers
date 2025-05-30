@@ -1,0 +1,27 @@
+Neos:
+  Neos:
+    nodeTypes:
+      presets:
+        properties:
+          asset:
+            collection:
+              type: string
+              ui:
+                label: Medien-Sammlung
+                reloadIfChanged: true
+                inspector:
+                  group: general
+                  editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+                  editorOptions:
+                    dataSourceIdentifier: codeq-assethelper-collections
+
+            tag:
+              type: string
+              ui:
+                label: Medien-Tag
+                reloadIfChanged: true
+                inspector:
+                  group: general
+                  editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+                  editorOptions:
+                    dataSourceIdentifier: codeq-assethelper-tags
