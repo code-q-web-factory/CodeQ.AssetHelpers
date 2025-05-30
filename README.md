@@ -1,8 +1,6 @@
 # CodeQ.AssetHelpers
 A package to provide selection of whole asset collection and tags in Neos content editing that keeps caching in mind.
 
-Here is the escaped Markdown documentation for your `AssetHelper` class:
-
 ## CodeQ.Asset EelHelper
 
 The `CodeQ.Asset` EelHelper provides utility methods for working with assets, asset collections, and tags in Neos CMS. It is designed to be used in Eel expressions and supports various operations such as retrieving assets by collection or tag, sorting assets, and converting file sizes to human-readable formats.
@@ -73,7 +71,7 @@ prototype(Your.Package:Component) {
 }
 ```
 
-## Notes
+### Notes
 - The methods are designed to handle both identifiers and object instances for collections and tags.
 
 ## CodeQ.AssetCacheTag EelHelper
