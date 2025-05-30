@@ -1,5 +1,5 @@
 {
-    "description": "",
+    "description": "A package to provide selection of whole asset collection and tags in Neos content editing that keeps caching in mind.",
     "type": "neos-package",
     "name": "codeq/assethelpers",
     "require": {
@@ -9,6 +9,22 @@
         "psr-4": {
             "CodeQ\\AssetHelpers\\": "Classes/"
         }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "1.10.37",
+        "squizlabs/php_codesniffer": "^3.7",
+        "mikey179/vfsstream": "@stable"
+    },
+    "scripts": {
+        "fix:style": "phpcbf --colors --standard=PSR12 Classes",
+        "test:style": "phpcs --colors -n --standard=PSR12 Classes",
+        "test:stan": "phpstan analyse Classes",
+        "cc": "phpstan clear cache",
+        "test": [
+            "composer install",
+            "composer test:style" ,
+            "composer test:stan"
+        ]
     },
     "extra": {
         "neos": {

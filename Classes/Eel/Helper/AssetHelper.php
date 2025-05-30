@@ -72,7 +72,7 @@ class AssetHelper implements ProtectedContextAwareInterface
         if (!$collection instanceof AssetCollection) {
             return [];
         }
-        $assets = match($type) {
+        $assets = match ($type) {
             'image' => $this->imageRepository->findByAssetCollection($collection)->toArray(),
             default => $this->assetRepository->findByAssetCollection($collection)->toArray()
         };
@@ -97,7 +97,7 @@ class AssetHelper implements ProtectedContextAwareInterface
         if (!$tag instanceof Tag) {
             return [];
         }
-        $assets = match($type) {
+        $assets = match ($type) {
             'image' => $this->imageRepository->findByTag($tag)->toArray(),
             default => $this->assetRepository->findByTag($tag)->toArray()
         };
